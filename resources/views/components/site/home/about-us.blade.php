@@ -51,8 +51,7 @@
                             <span> {{ about_title()[1] }}</span>
                         </h2>
                         <p class="wow fadeInUp" data-wow-delay="0.4s">
-                            We provide reliable, cutting-edge IOT & alarm security
-                            solutions to protect your digital assets, ensuring safety and peace of mind.
+                            {{ about_support_description() }}
                         </p>
                     </div>
                     <!-- Section Title End -->
@@ -97,7 +96,7 @@
                                 </div>
 
                                 <div class="about-footer-btn-content">
-                                    <h3><a href="tel:+91123456789">+91 123 456 789</a></h3>
+                                    <h3><a href="tel:+91123456789">{{ about_mobile() }}</a></h3>
                                 </div>
                             </div>
                             <!-- About Content Button End -->
