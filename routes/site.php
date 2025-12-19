@@ -13,10 +13,10 @@ use App\Http\Controllers\Site\Organization\DownloadController;
 // });
 
 
-Route::resource('/', HomeController::class);
+// Route::resource('/', HomeController::class);
 Route::resource('product', ProductController::class);
 Route::resource('contact', ContactController::class);
-Route::resource('aboutus', AboutUsController::class);
+Route::resource('abouts', AboutUsController::class);
 Route::resource('download', DownloadController::class);
 Route::resource('solutions', SolutionController::class);
 
@@ -26,3 +26,7 @@ Route::get('product-by-category/{category}', [ProductController::class, 'product
 
 Route::get('solution-by-type/{type}', [SolutionController::class, 'solutionByType']);
 Route::get('solution-by-type-show/{type}', [SolutionController::class, 'show']);
+
+
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
