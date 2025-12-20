@@ -14,14 +14,14 @@
                         <div class="service-title-box">
                             <div class="service-title">
                                 <h3>
-                                    <a href="{{ $service['link'] }}">
+                                    <a href="{{ route('services.show', ['service' => $service['link']]) }}">
                                         {{ $service['title'] }}
                                     </a>
                                 </h3>
                             </div>
 
                             <div class="service-btn">
-                                <a href="{{ $service['link'] }}">
+                                <a href="{{ route('services.show', ['service' => $service['link']]) }}">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
