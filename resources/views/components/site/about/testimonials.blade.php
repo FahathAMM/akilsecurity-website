@@ -32,9 +32,9 @@
                                         <div class="swiper-slide">
                                             <div class="testimonial-item">
                                                 <div class="testimonial-header">
-                                                    <div class="testimonial-company-logo">
+                                                    {{-- <div class="testimonial-company-logo">
                                                         <img src="{{ asset($slide['company_logo']) }}" alt="">
-                                                    </div>
+                                                    </div> --}}
                                                     <div class="testimonial-quote">
                                                         <img src="{{ asset($slide['quote_icon']) }}" alt="">
                                                     </div>
@@ -84,8 +84,8 @@
                             </div>
 
                             <div class="testimonial-contact-btn">
-                                <a href="{{ testimonials_contact()['contact_page'] }}" class="btn-default">contact
-                                    us</a>
+                                <a href="{{ route(testimonials_contact()['contact_page']) }}"
+                                    class="btn-default">contact us</a>
                             </div>
                         </div>
                     </div>
