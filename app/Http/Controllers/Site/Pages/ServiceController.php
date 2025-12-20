@@ -27,4 +27,29 @@ class ServiceController extends Controller
         DetectsUserEnvironment("Services", 'View');
         return view('site.service.index');
     }
+
+    public function show($slug)
+    {
+        // Detects user environment
+        DetectsUserEnvironment("Services Show", 'View');
+
+        // Get all services from config
+        $services = config('site.show_service');
+        $servicesList = config('site.our_services.items');
+
+        // Check if service exists
+        if (!isset($services[$slug])) {
+            abort(404);
+        }
+
+        // Get selected service data
+        $service = $services[$slug];
+
+        DetectsUserEnvironment("Services Show", 'View');
+
+        return view('site.service.show', [
+            'service' => $service,
+            'servicesList' => $servicesList
+        ]);
+    }
 }
