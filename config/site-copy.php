@@ -12,104 +12,6 @@ return [
             'title'         => 'Next-generation AI- and IoT-driven security solution, ensuring protection anytime, anywhere',
             'description'   => 'Enhance workplace efficiency and safety with IoT-powered time attendance, security, and alarm solutions designed to protect people, assets seamlessly..',
         ],
-
-        'cta' => [
-            'title' => 'Protect business, cyber security solution today!',
-            'image' => 'site/images/cta-box-image.jpg',
-            'contacts' => [
-                [
-                    'icon' => 'site/images/icon-phone.svg',
-                    'title' => 'Get contact now',
-                    'value' => '+123 456 789',
-                    'link' => 'tel:+123456789',
-                ],
-                [
-                    'icon' => 'site/images/icon-mail.svg',
-                    'title' => 'Sent e-mail',
-                    'value' => 'info@domainname.com',
-                    'link' => 'mailto:info@domainname.com',
-                ],
-            ],
-        ],
-
-        'feature' => [
-            'section_title' => 'our feature',
-            'title' => ['Comprehensive protection', 'simplified security'],
-
-            'images' => [
-                'feature_1' => 'site/images/feature-image-1.jpg',
-                'feature_2' => 'site/images/feature-image-2.jpg',
-            ],
-
-            'experience' => [
-                'years' => 25,
-                'description' => 'Years of experience in security system',
-            ],
-
-            'clients' => [
-                'images' => [
-                    'site/images/client-image-1.jpg',
-                    'site/images/client-image-2.jpg',
-                    'site/images/client-image-3.jpg',
-                ],
-                'counter' => ['number' => 25, 'suffix' => 'k'],
-            ],
-
-            'features' => [
-                [
-                    'icon' => 'site/images/icon-ferature-1.svg',
-                    'title' => 'Comprehensive Security Solutions',
-                    'description' => 'Comprehensive Security Solutions provide complete protection for residential, commercial, and industrial properties, including, access control, fire alarms, and intrusion detection.'
-                ],
-                [
-                    'icon' => 'site/images/icon-ferature-2.svg',
-                    'title' => 'Real-Time Threat Monitoring',
-                    'description' => 'Real-Time Threat Monitoring ensures continuous supervision of your premises, enabling immediate response to any security breach or unusual activity.'
-                ],
-                [
-                    'icon' => 'site/images/icon-ferature-3.svg',
-                    'title' => '24/7 monitoring and support',
-                    'description' => '24/7 Monitoring and Support offers round-the-clock system supervision, maintenance, and rapid response by trained and certified security professionals.'
-                ],
-            ],
-        ],
-
-        'projects' => [
-            'section_title' => 'our project',
-            'title' => ['Showcasing our security solution', 'latest projects'],
-            'items' => [
-                [
-                    'category' => 'Authentication',
-                    'title' => 'IoT Security Enhancement for Smart Devices',
-                    'image' => 'site/images/project-1.jpg',
-                    'link' => 'project-single.html',
-                    'active' => false,
-                ],
-                [
-                    'category' => 'Authentication',
-                    'title' => 'IoT Security Enhancement for Smart Devices',
-                    'image' => 'site/images/project-2.jpg',
-                    'link' => 'project-single.html',
-                    'active' => true,
-                ],
-                [
-                    'category' => 'Authentication',
-                    'title' => 'IoT Security Enhancement for Smart Devices',
-                    'image' => 'site/images/project-3.jpg',
-                    'link' => 'project-single.html',
-                    'active' => false,
-                ],
-                [
-                    'category' => 'Authentication',
-                    'title' => 'IoT Security Enhancement for Smart Devices',
-                    'image' => 'site/images/project-4.jpg',
-                    'link' => 'project-single.html',
-                    'active' => false,
-                ],
-            ],
-            'footer_text' => 'Cybersecurity Innovations Explore All Our Projects Safeguarding Digital Futures Against Evolving Threats.',
-            'footer_link' => 'projects.html',
-        ],
     ],
 
     /*
@@ -205,24 +107,24 @@ return [
         ],
 
         'why_choose_us' => [
-            'section_title' => 'Why Choose Us',
-            'title' => 'Reliable Security Products and Software Solutions',
+            'section_title' => 'why choose us',
+            'title' => 'Reliable solutions for cybersecurity excellence',
             'image' => 'site/images/why-choose-image.jpg',
             'items' => [
                 [
                     'icon' => 'site/images/icon-why-choose-1.svg',
-                    'title' => 'Expertise and Experience',
-                    'description' => 'A team of experienced professionals delivering advanced security products and software solutions with deep industry knowledge.',
+                    'title' => 'expertise and experience',
+                    'description' => 'A team of seasoned cybersecurity professionals with extensive industry knowledge.',
                 ],
                 [
                     'icon' => 'site/images/icon-why-choose-2.svg',
-                    'title' => 'Proactive Security Approach',
-                    'description' => 'Focused on preventing threats before they impact your systems, ensuring proactive protection rather than reactive fixes.',
+                    'title' => 'proactive security approach',
+                    'description' => 'Focused on preventing threats before they impact your system, not just reacting after the fact.',
                 ],
                 [
                     'icon' => 'site/images/icon-why-choose-3.svg',
-                    'title' => 'Tailored Training Programs',
-                    'description' => 'Providing customized training to your team on security best practices to minimize human error and enhance vigilance.',
+                    'title' => 'tailored training programs',
+                    'description' => 'Educating your team on security best practices to reduce human error and enhance vigilance.',
                 ],
             ],
 
@@ -235,19 +137,19 @@ return [
                 ],
                 [
                     'icon' => 'site/images/icon-why-choose-counter-2.svg',
-                    'value' => 2,
+                    'value' => 15,
                     'suffix' => 'K',
                     'label' => 'project complete',
                 ],
                 [
                     'icon' => 'site/images/icon-why-choose-counter-3.svg',
-                    'value' => 2,
+                    'value' => 16,
                     'suffix' => 'K',
                     'label' => 'customer happy',
                 ],
                 [
                     'icon' => 'site/images/icon-why-choose-counter-4.svg',
-                    'value' => 7,
+                    'value' => 120,
                     'suffix' => '',
                     'label' => 'winning awards',
                 ],
@@ -257,31 +159,82 @@ return [
         'how_it_work' => [
             'section_title' => 'how it work',
             'title' => [
-                'Streamlined process',
-                'smart security solutions'
+                'Streamlined process, cyber',
+                'protection security',
             ],
 
             'steps' => [
                 [
                     'step' => '01',
                     'title' => 'assessment & planning',
-                    'description' => 'We begin by understanding your unique security needs and potential risks. Our experts conduct a detailed assessment to identify vulnerabilities and recommend tailored solutions for both hardware and software systems.',
+                    'description' => 'We start by understand your unique needs potential risks Through detailed assessment we identify vulnerabilities and develop.',
                 ],
                 [
                     'step' => '02',
                     'title' => 'implementation',
-                    'description' => 'Our team installs and configures advanced security systems, including CCTV, alarm systems, access control, and software solutions, ensuring seamless integration and optimal protection for your assets.',
+                    'description' => 'We start by understand your unique needs potential risks Through detailed assessment we identify vulnerabilities and develop.',
                 ],
                 [
                     'step' => '03',
                     'title' => 'ongoing support & maintenance',
-                    'description' => 'We provide continuous monitoring, maintenance, and software updates to keep your security systems fully operational and up-to-date, ensuring long-term protection and reliability.',
+                    'description' => 'We start by understand your unique needs potential risks Through detailed assessment we identify vulnerabilities and develop.',
                 ],
             ],
 
             'images' => [
                 'image_1' => 'site/images/how-it-work-image-1.jpg',
                 'image_2' => 'site/images/how-it-work-image-2.jpg',
+            ],
+        ],
+
+        'our_team' => [
+            'section_title' => 'Expert team',
+            'title' => 'Our expert team member',
+            'members' => [
+                [
+                    'name' => 'michael johnson',
+                    'role' => 'security officer',
+                    'image' => 'site/images/team-1.jpg',
+                    'link' => 'team-single.html',
+                    'socials' => [
+                        'twitter' => '#',
+                        'facebook' => '#',
+                        'instagram' => '#',
+                    ],
+                ],
+                [
+                    'name' => 'sophia carter',
+                    'role' => 'cybersecurity analyst',
+                    'image' => 'site/images/team-2.jpg',
+                    'link' => 'team-single.html',
+                    'socials' => [
+                        'twitter' => '#',
+                        'facebook' => '#',
+                        'instagram' => '#',
+                    ],
+                ],
+                [
+                    'name' => 'michael brown',
+                    'role' => 'incident response',
+                    'image' => 'site/images/team-3.jpg',
+                    'link' => 'team-single.html',
+                    'socials' => [
+                        'twitter' => '#',
+                        'facebook' => '#',
+                        'instagram' => '#',
+                    ],
+                ],
+                [
+                    'name' => 'isabella moore',
+                    'role' => 'security awareness',
+                    'image' => 'site/images/team-4.jpg',
+                    'link' => 'team-single.html',
+                    'socials' => [
+                        'twitter' => '#',
+                        'facebook' => '#',
+                        'instagram' => '#',
+                    ],
+                ],
             ],
         ],
 
@@ -384,8 +337,8 @@ return [
 
         'our_benefits' => [
             'section_title' => 'our benefits',
-            'title' => 'Reliable solutions for integrated security systems',
-            'description' => 'Akil Security & Alarm System L.L.C. delivers end-to-end security and alarm solutions for residential, commercial, and industrial clients. With international presence across the UAE, KSA, Oman, and India, we provide certified, reliable, and scalable security systems ensuring complete protection and peace of mind.',
+            'title' => 'Reliable solutions for cybersecurity excellence',
+            'description' => 'Our comprehensive cybersecurity solutions provide robust protection, minimizing risks and giving you peace of mind knowing your data and systems are secure. We empower you with the tools and expertise to navigate today\'s.',
 
             'images' => [
                 'image_1' => 'site/images/benefit-image-1.jpg',
@@ -396,51 +349,50 @@ return [
             'body_items' => [
                 [
                     'icon' => 'site/images/icon-benefit-body-1.svg',
-                    'title' => 'comprehensive security solutions',
+                    'title' => 'proactive threat protection',
                 ],
                 [
                     'icon' => 'site/images/icon-benefit-body-2.svg',
-                    'title' => '24/7 support and maintenance',
+                    'title' => '24/7 monitoring and help',
                 ],
             ],
 
             'footer_list' => [
-                'Dubai Police (DPS) Approved',
-                'ISO 9001:2008 Certified',
-                'Tailor-Made & Scalable Systems',
+                'Enhanced Business Continuity',
+                'Scalable Solutions',
+                'Peace of Mind',
             ],
 
             'footer_button' => [
                 'label' => 'get started',
                 'link' => 'contact.html',
             ],
-        ],
 
+        ],
 
         'faq' => [
             'section_title' => 'faq',
-            'title' => ['Security system questions', 'answered clearly'],
+            'title' => ['Cybersecurity questions', 'answered clearly'],
             'image' => 'site/images/faq-image.jpg',
             'items' => [
                 [
-                    'question' => 'What security solutions does Akil Security provide?',
-                    'answer' => 'Akil Security & Alarm System L.L.C. provides complete security solutions including CCTV surveillance, access control systems, fire alarms, intrusion detection, and integrated security systems for residential and commercial properties.'
+                    'question' => 'What is cybersecurity?',
+                    'answer' => 'Cybersecurity is critical for safeguarding sensitive information, ensuring business continuity, and preventing financial and reputational loss due to cyberattacks.'
                 ],
                 [
-                    'question' => 'Why are professional security systems important?',
-                    'answer' => 'Professional security systems help protect people, property, and assets by detecting threats early, reducing risks, and ensuring safety compliance while providing peace of mind.'
+                    'question' => 'Why is cybersecurity important?',
+                    'answer' => 'Cybersecurity is critical for safeguarding sensitive information, ensuring business continuity, and preventing financial and reputational loss due to cyberattacks.'
                 ],
                 [
-                    'question' => 'Do you offer customized security solutions?',
-                    'answer' => 'Yes, we design tailor-made security solutions based on the unique requirements of each client, whether for residential buildings, commercial facilities, healthcare centers, schools, or large-scale projects.'
+                    'question' => 'What are the most common cyber threats?',
+                    'answer' => 'Cybersecurity is critical for safeguarding sensitive information, ensuring business continuity, and preventing financial and reputational loss due to cyberattacks.'
                 ],
                 [
-                    'question' => 'Do you provide installation and ongoing support?',
-                    'answer' => 'Yes, our services include system delivery, installation, programming, testing, commissioning, maintenance, customer training, and continuous technical support.'
+                    'question' => 'How can I protect my business from cyber threats?',
+                    'answer' => 'Cybersecurity is critical for safeguarding sensitive information, ensuring business continuity, and preventing financial and reputational loss due to cyberattacks.'
                 ],
             ],
         ],
-
     ],
 
 

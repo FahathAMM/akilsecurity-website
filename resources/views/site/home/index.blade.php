@@ -7,11 +7,18 @@
 
     <x-site.home.about-us />
 
-    {{-- <x-site.home.cat-banner />
-    <x-site.home.popular-category :categories="$categories" />
-    <x-site.home.display-product :products="$products" />
-    <x-site.home.iconbox /> --}}
+    <!-- CTA Box Start -->
+    <x-site.home.cta-box />
+    <!-- CTA Box End -->
 
-    home page
+    <!-- Our Feature Section Start -->
+    <x-site.home.feature />
+    <!-- Our Feature Section End -->
 
+    <!-- Our Projects Section Start -->
+    <x-site.home.projects />
+    <!-- Our Projects Section End -->
+
+
+    {{-- <x-site.home.client-icons /> --}}
 @endsection

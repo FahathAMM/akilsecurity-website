@@ -2,11 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Site\Home\HomeController;
+use App\Http\Controllers\Site\Pages\AboutUsController;
+use App\Http\Controllers\Site\Pages\ContactController;
+use App\Http\Controllers\Site\Pages\ServiceController;
+use App\Http\Controllers\Site\Pages\DownloadController;
 use App\Http\Controllers\Site\Product\ProductController;
 use App\Http\Controllers\Site\Solution\SolutionController;
-use App\Http\Controllers\Site\Organization\AboutUsController;
-use App\Http\Controllers\Site\Organization\ContactController;
-use App\Http\Controllers\Site\Organization\DownloadController;
 
 // Route::get('/', function () {
 //     return view('site.test');
@@ -17,6 +18,7 @@ use App\Http\Controllers\Site\Organization\DownloadController;
 Route::resource('product', ProductController::class);
 Route::resource('contact', ContactController::class);
 Route::resource('abouts', AboutUsController::class);
+Route::resource('services', ServiceController::class);
 Route::resource('download', DownloadController::class);
 Route::resource('solutions', SolutionController::class);
 

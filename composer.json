@@ -51,7 +51,9 @@
             "app/Helpers/Template.php",
             "app/Helpers/Media.php",
             "app/Helpers/site/homeHelper.php",
-            "app/Helpers/site/aboutHelper.php"
+            "app/Helpers/site/aboutHelper.php",
+            "app/Helpers/site/servicesHelper.php",
+            "app/Helpers/site/contactHelper.php"
         ]
     },
     "autoload-dev": {

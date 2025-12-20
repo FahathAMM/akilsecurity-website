@@ -10,8 +10,8 @@ return [
 
     'banner' => [
         'title-company' => 'Akil Security & Alarm System',
-        'title'         => 'IoT-powered security, anytime, anywhere',
-        'description'   => 'Enhance workplace efficiency and safety with IoT-powered time attendance, security, and alarm solutions designed to protect people, assets seamlessly..',
+        'title'         => 'Next-generation AI & IoT enabled security solution',
+        'description'   => 'Enhance workplace productivity and safety with AI-powered IoT solutions, delivering intelligent security and alarm systems that effortlessly protect people and assets.',
 
     ],
 

@@ -7,30 +7,30 @@ return [
     ],
     [
         'title' => 'About Us',
-        'route' => 'about',
+        'route' => 'abouts.index',
     ],
     [
         'title' => 'Services',
-        'route' => 'services',
+        'route' => 'services.index',
     ],
     [
         'title' => 'Blog',
-        'route' => 'blog',
+        'route' => '',
     ],
     [
         'title' => 'Pages',
         'children' => [
-            ['title' => 'Service Details', 'route' => 'service.single'],
-            ['title' => 'Blog Details', 'route' => 'blog.single'],
-            ['title' => 'Projects', 'route' => 'projects'],
-            ['title' => 'Project Details', 'route' => 'project.single'],
-            ['title' => 'Our Team', 'route' => 'team'],
-            ['title' => 'Pricing', 'route' => 'pricing'],
-            ['title' => 'FAQs', 'route' => 'faqs'],
+            ['title' => 'Service Details', 'route' => ''],
+            ['title' => 'Blog Details', 'route' => ''],
+            ['title' => 'Projects', 'route' => ''],
+            ['title' => 'Project Details', 'route' => ''],
+            ['title' => 'Our Team', 'route' => ''],
+            ['title' => 'Pricing', 'route' => ''],
+            ['title' => 'FAQs', 'route' => ''],
         ],
     ],
     [
         'title' => 'Contact Us',
-        'route' => 'contact',
+        'route' => 'contact.index',
     ],
 ];
