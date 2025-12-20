@@ -289,8 +289,8 @@ return [
             'title' => 'Our expert team member',
             'members' => [
                 [
-                    'name' => 'michael johnson',
-                    'role' => 'security officer',
+                    'name' => 'Saravanan',
+                    'role' => 'Network Engineer',
                     'image' => 'site/images/team-1.jpg',
                     'link' => 'team-single.html',
                     'socials' => [
@@ -300,8 +300,8 @@ return [
                     ],
                 ],
                 [
-                    'name' => 'sophia carter',
-                    'role' => 'cybersecurity analyst',
+                    'name' => 'Kumar',
+                    'role' => 'Network Engineer',
                     'image' => 'site/images/team-2.jpg',
                     'link' => 'team-single.html',
                     'socials' => [
@@ -311,8 +311,8 @@ return [
                     ],
                 ],
                 [
-                    'name' => 'michael brown',
-                    'role' => 'incident response',
+                    'name' => 'Syed',
+                    'role' => 'Network Engineer',
                     'image' => 'site/images/team-3.jpg',
                     'link' => 'team-single.html',
                     'socials' => [
@@ -322,8 +322,8 @@ return [
                     ],
                 ],
                 [
-                    'name' => 'isabella moore',
-                    'role' => 'security awareness',
+                    'name' => 'Haneefa',
+                    'role' => 'Supervisor',
                     'image' => 'site/images/team-4.jpg',
                     'link' => 'team-single.html',
                     'socials' => [
