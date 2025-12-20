@@ -103,7 +103,7 @@
 
                             <!-- About Footer Button Start -->
                             <div class="about-footer-btn">
-                                <a href="contact.html" class="btn-default">contact us</a>
+                                <a href="{{ route('contact.index') }}" class="btn-default">contact us</a>
                             </div>
                             <!-- About Footer Button End -->
                         </div>
