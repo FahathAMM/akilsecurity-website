@@ -6,17 +6,17 @@ return [
         'route' => 'home',
     ],
     [
-        'title' => 'About Us',
-        'route' => 'abouts.index',
-    ],
-    [
         'title' => 'Services',
         'route' => 'services.index',
     ],
     [
-        'title' => 'Blog',
-        'route' => '',
+        'title' => 'About Us',
+        'route' => 'abouts.index',
     ],
+    // [
+    //     'title' => 'Blog',
+    //     'route' => '',
+    // ],
     [
         'title' => 'Pages',
         'children' => [
