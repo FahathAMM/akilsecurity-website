@@ -6,7 +6,7 @@
                 <a class="navbar-brand d-flex align-items-center" href="./">
                     {{-- <img src="{{ asset('site/images/logo.svg') }}" alt="Logo"> --}}
                     <img src="{{ asset('site/images/about/logo_circle2.png') }}" alt="Logo" style="width:50px">
-                    <h5 for="">Akil Security & alarm system</h5>
+                    <h5 class="ms-2">Akil Security</h5>
                 </a>
                 <!-- Logo End -->
 

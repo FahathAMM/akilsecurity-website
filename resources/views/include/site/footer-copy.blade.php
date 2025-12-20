@@ -1,193 +1,116 @@
- <!-- Footer -->
- <footer id="footer" class="footer has-pb">
-     <div class="footer-wrap">
-         <div class="footer-body">
-             <div class="container">
-                 <div class="row">
-                     <div class="col-lg-4">
-                         <div class="footer-infor">
-                             <div class="footer-logo">
-                                 <a href="index.html">
-                                     {{-- <img src="images/logo/logo.svg" alt=""> --}}
-                                 </a>
-                             </div>
-                             <div class="footer-address">
-                                 <p>549 Oak St.Crystal Lake, IL 60014</p>
-                                 <a href="contact.html" class="tf-btn-default fw-6">GET DIRECTION<i
-                                         class="icon-arrowUpRight"></i></a>
-                             </div>
-                             <ul class="footer-info">
-                                 <li>
-                                     <i class="icon-mail"></i>
-                                     <p>themesflat@gmail.com</p>
-                                 </li>
-                                 <li>
-                                     <i class="icon-phone"></i>
-                                     <p>315-666-6688</p>
-                                 </li>
-                             </ul>
-                             <ul class="tf-social-icon">
-                                 <li><a href="#" class="social-facebook"><i class="icon icon-fb"></i></a>
-                                 </li>
-                                 <li><a href="#" class="social-twiter"><i class="icon icon-x"></i></a></li>
-                                 <li><a href="#" class="social-instagram"><i class="icon icon-instagram"></i></a>
-                                 </li>
-                                 <li><a href="#" class="social-tiktok"><i class="icon icon-tiktok"></i></a>
-                                 </li>
-                                 <li><a href="#" class="social-amazon"><i class="icon icon-amazon"></i></a>
-                                 </li>
-                                 <li><a href="#" class="social-pinterest"><i class="icon icon-pinterest"></i></a>
-                                 </li>
-                             </ul>
-                         </div>
-                     </div>
-                     <div class="col-lg-4">
-                         <div class="footer-menu">
-                             <div class="footer-col-block">
-                                 <div class="footer-heading text-button footer-heading-mobile">
-                                     Infomation
-                                 </div>
-                                 <div class="tf-collapse-content">
-                                     <ul class="footer-menu-list">
-                                         <li class="text-caption-1">
-                                             <a href="about-us.html" class="footer-menu_item">About Us</a>
-                                         </li>
-                                         <li class="text-caption-1">
-                                             <a href="#" class="footer-menu_item">Our Stories</a>
-                                         </li>
-                                         <li class="text-caption-1">
-                                             <a href="#" class="footer-menu_item">Size Guide</a>
-                                         </li>
-                                         <li class="text-caption-1">
-                                             <a href="contact.html" class="footer-menu_item">Contact us</a>
-                                         </li>
-                                         <li class="text-caption-1">
-                                             <a href="#" class="footer-menu_item">Career</a>
-                                         </li>
-                                         <li class="text-caption-1">
-                                             <a href="my-account.html" class="footer-menu_item">My Account</a>
-                                         </li>
-                                     </ul>
-                                 </div>
-                             </div>
-                             <div class="footer-col-block">
-                                 <div class="footer-heading text-button footer-heading-mobile">
-                                     Customer Services
-                                 </div>
-                                 <div class="tf-collapse-content">
-                                     <ul class="footer-menu-list">
-                                         <li class="text-caption-1">
-                                             <a href="#" class="footer-menu_item">Shipping</a>
-                                         </li>
-                                         <li class="text-caption-1">
-                                             <a href="#" class="footer-menu_item">Return & Refund</a>
-                                         </li>
-                                         <li class="text-caption-1">
-                                             <a href="#" class="footer-menu_item">Privacy Policy</a>
-                                         </li>
-                                         <li class="text-caption-1">
-                                             <a href="term-of-use.html" class="footer-menu_item">Terms &
-                                                 Conditions</a>
-                                         </li>
-                                         <li class="text-caption-1">
-                                             <a href="FAQs.html" class="footer-menu_item">Orders FAQs</a>
-                                         </li>
-                                         <li class="text-caption-1">
-                                             <a href="wish-list.html" class="footer-menu_item">My Wishlist</a>
-                                         </li>
-                                     </ul>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-lg-4">
-                         <div class="footer-col-block">
-                             <div class="footer-heading text-button footer-heading-mobile">
-                                 Newletter
-                             </div>
-                             <div class="tf-collapse-content">
-                                 <div class="footer-newsletter">
-                                     <p class="text-caption-1">Sign up for our newsletter and get 10% off your
-                                         first purchase</p>
-                                     <form id="subscribe-form" action="#" class="form-newsletter subscribe-form"
-                                         method="post" accept-charset="utf-8" data-mailchimp="true">
-                                         <div id="subscribe-content" class="subscribe-content">
-                                             <fieldset class="email">
-                                                 <input id="subscribe-email" type="email" name="email-form"
-                                                     class="subscribe-email" placeholder="Enter your e-mail"
-                                                     tabindex="0" aria-required="true">
-                                             </fieldset>
-                                             <div class="button-submit">
-                                                 <button id="subscribe-button" class="subscribe-button"
-                                                     type="button"><i class="icon icon-arrowUpRight"></i></button>
-                                             </div>
-                                         </div>
-                                         <div id="subscribe-msg" class="subscribe-msg"></div>
-                                     </form>
-                                     <div class="tf-cart-checkbox">
-                                         <div class="tf-checkbox-wrapp">
-                                             <input class="" type="checkbox" id="footer-Form_agree"
-                                                 name="agree_checkbox">
-                                             <div>
-                                                 <i class="icon-check"></i>
-                                             </div>
-                                         </div>
-                                         <label class="text-caption-1" for="footer-Form_agree">
-                                             By clicking subcribe, you agree to the <a class="fw-6 link"
-                                                 href="term-of-use.html">Terms of Service</a> and <a class="fw-6 link"
-                                                 href="#">Privacy Policy</a>.
-                                         </label>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-         <div class="footer-bottom">
-             <div class="container">
-                 <div class="row">
-                     <div class="col-12">
-                         <div class="footer-bottom-wrap">
-                             <div class="left">
-                                 <p class="text-caption-1">©2024 Modave. All Rights Reserved.</p>
-                                 <div class="tf-cur justify-content-end">
-                                     <div class="tf-currencies">
-                                         {{-- <select class="image-select center style-default type-currencies">
-                                             <option selected
-                                                 data-thumbnail="{{ asset('site/images/country/us.svg') }}">USD
-                                             </option>
-                                             <option data-thumbnail="{{ asset('site/images/country/vn.svg') }}">VND
-                                             </option>
-                                         </select> --}}
-                                     </div>
-                                     <div class="tf-languages">
-                                         <select class="image-select center style-default type-languages">
-                                             <option>English</option>
-                                             <option>Vietnam</option>
-                                         </select>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="tf-payment">
-                                 <p class="text-caption-1">Payment:</p>
-                                 <ul>
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Footer Header Start -->
+                <div class="footer-header">
+                    <!-- Footer Logo Start -->
+                    <div class="footer-logo">
+                        <img src="images/footer-logo.svg" alt="">
+                    </div>
+                    <!-- Footer Logo End -->
 
-                                     @for ($i = 1; $i < 7; $i++)
-                                         <a href="#">
-                                             <img src='{{ asset("site/images/payment/img-$i.png") }}' alt="">
-                                         </a>
-                                     @endfor
+                    <!-- Footer Social Links Start -->
+                    <div class="footer-social-links">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer Social Links End -->
+                </div>
+                <!-- Footer Header End -->
+            </div>
 
+            <div class="col-lg-4">
+                <!-- Footer Newsletter Form Start -->
+                <div class="footer-links footer-newsletter-form">
+                    <h3>Subscribe our newsletter:</h3>
+                    <p>Protecting networks, systems data from evolving. </p>
+                    <form id="newsletterForm" action="#" method="POST">
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" id="mail"
+                                placeholder="Enter Your Email" required="">
+                            <button type="submit" class="newsletter-btn"><i
+                                    class="fa-regular fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Footer Newsletter Form End -->
+            </div>
 
-                                 </ul>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </footer>
- <!-- /Footer -->
+            <div class="col-lg-2 col-md-3 col-6">
+                <!-- Footer Links Start -->
+                <div class="footer-links footer-quick-links">
+                    <h3>Quick link</h3>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="blog-single.html">blog</a></li>
+                    </ul>
+                </div>
+                <!-- Footer Links End -->
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <!-- Footer Links Start -->
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="service-single.html">Threat detection</a></li>
+                        <li><a href="service-single.html">Endpoint security</a></li>
+                        <li><a href="service-single.html">Network defense</a></li>
+                        <li><a href="service-single.html">Data encryption</a></li>
+                    </ul>
+                </div>
+                <!-- Footer Links End -->
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <!-- Footer Links Start -->
+                <div class="footer-links">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Term's & condition </a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <!-- Footer Links End -->
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <!-- Footer Links Start -->
+                <div class="footer-links">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:+123456789">+123 456 789</a></li>
+                        <li><a href="mailto:info@domain.com">info@domain.com</a></li>
+                        <li>123 High Street LN1 1AB United Kingdom</li>
+                    </ul>
+                </div>
+                <!-- Footer Links End -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Copyright Start -->
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Footer Copyright Text Start -->
+                    <div class="footer-copyright-text">
+                        <p>Copyright © 2025 All Rights Reserved.</p>
+                    </div>
+                    <!-- Footer Copyright Text End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Copyright End -->
+</footer>
