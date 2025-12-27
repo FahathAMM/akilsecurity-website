@@ -26,22 +26,29 @@ class StoreRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name'    => 'required|string|max:255',
+            'fname'   => 'required|string|max:255',
+            'lname'   => 'nullable|max:255',
             'email'   => 'required|email',
             'phone'   => 'nullable|string|max:20',
-            'subject' => 'required|string|max:255',
-            'company' => 'nullable|string|max:255',
-            'country' => 'nullable|string|max:100',
-            'product_name' => 'nullable|string|max:100',
-            'product_id' => 'nullable|string|max:100',
-            'message' => 'required|min:10',
+            'subject' => 'required|string|min:10|max:255',
+            'captcha' => 'required',
+            // 'message' => 'required|min:10',
         ];
+    }
+
+    public function withValidator(Validator $validator)
+    {
+        $validator->after(function ($validator) {
+            if ($this->captcha != session('captcha_answer')) {
+                $validator->errors()->add('captcha', 'Captcha is incorrect.');
+            }
+        });
     }
 
     public function messages(): array
     {
         return [
-            'name.required'    => 'The name field is required.',
+            'fname.required'   => 'The first name field is required.',
             'email.required'   => 'The email field is required.',
             'email.email'      => 'Please enter a valid email address.',
             'message.required' => 'The message field is required.',
