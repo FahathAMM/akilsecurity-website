@@ -22,6 +22,12 @@ Route::resource('services', ServiceController::class);
 Route::resource('download', DownloadController::class);
 Route::resource('solutions', SolutionController::class);
 
+
+
+Route::get('/captcha-image', [ContactController::class, 'image'])->name('captcha.image');
+
+
+
 Route::get('download-file/{file}', [DownloadController::class, 'downloadFile']);
 
 Route::get('product-by-category/{category}', [ProductController::class, 'productByCategory']);
