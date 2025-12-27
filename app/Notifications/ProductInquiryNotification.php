@@ -9,11 +9,10 @@ use Illuminate\Notifications\Messages\MailMessage;
 
 class ProductInquiryNotification extends Notification
 {
-    protected $customer;
-
-    public function __construct($customer)
+    public array $data;
+    public function __construct($data)
     {
-        $this->customer = $customer;
+        $this->data = $data;
     }
 
     public function via($notifiable)
@@ -25,9 +24,17 @@ class ProductInquiryNotification extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->subject('New Product Inquiry')
-            ->line("Customer {$this->customer->name} has inquired about {$this->customer->product_name}.")
-            ->action('View Product', url("/product/{$this->customer->product_id}"))
+            ->subject('New Inquiry from Contact Form')
+            ->greeting('Hello,')
+            ->line('You have received a new inquiry from the website.')
+            ->line('📌 **Contact Details**')
+            ->line('First Name: ' . $this->data['fname'])
+            ->line('Last Name: ' . ($this->data['lname'] ?? 'N/A'))
+            ->line('Email: ' . $this->data['email'])
+            ->line('Phone: ' . ($this->data['phone'] ?? 'N/A'))
+            ->line('Subject:')
+            ->line($this->data['subject'])
+            ->action('View Website', url('/'))
             ->line('Please follow up promptly.');
     }
 
