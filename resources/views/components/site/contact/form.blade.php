@@ -166,7 +166,7 @@
                     // console.log('Success:', response);
                     if (response.status) {
                         alertNotify(response.message, 'success')
-
+                        associateErrors1([], 'contact-form');
                     } else {
                         associateErrors1(response.errors, 'contact-form');
                     }
