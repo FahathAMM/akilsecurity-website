@@ -60,35 +60,65 @@
                         </div>
 
                         <div class="member-contact-form contact-form">
-                            <form id="contactForm" method="POST" class="wow fadeInUp" data-wow-delay="0.2s">
+                            {{-- <form id="contactForm" method="POST" class="wow fadeInUp" data-wow-delay="0.2s"> --}}
+
+                            <form id="contact-form" action="{{ url('contact') }}" method="post"
+                                class="form-leave-comment">
+                                @csrf
+
                                 @csrf
                                 <div class="row">
                                     <div class="form-group col-md-6 mb-4">
-                                        <input type="text" name="fname" class="form-control"
-                                            placeholder="First name" required>
+                                        <input type="text" name="fname" class="form-control frm"
+                                            placeholder="First name">
+                                        <div class="invalid-feedback d-block invalid-msg text-start"> </div>
                                     </div>
 
                                     <div class="form-group col-md-6 mb-4">
                                         <input type="text" name="lname" class="form-control"
-                                            placeholder="Last name" required>
+                                            placeholder="Last name">
                                     </div>
 
                                     <div class="form-group col-md-6 mb-4">
                                         <input type="text" name="phone" class="form-control"
-                                            placeholder="Enter Your Phone No." required>
+                                            placeholder="Enter Your Phone No.">
+                                        <div class="invalid-feedback d-block invalid-msg text-start"> </div>
                                     </div>
 
                                     <div class="form-group col-md-6 mb-4">
                                         <input type="email" name="email" class="form-control"
-                                            placeholder="Enter Your E-mail" required>
+                                            placeholder="Enter Your E-mail">
+                                        <div class="invalid-feedback d-block invalid-msg text-start"> </div>
                                     </div>
 
                                     <div class="form-group col-md-12 mb-5">
-                                        <textarea name="message" class="form-control" rows="4" placeholder="Write Message"></textarea>
+                                        <textarea name="subject" class="form-control" rows="4" placeholder="Write Message"></textarea>
+                                        <div class="invalid-feedback d-block invalid-msg text-start"> </div>
                                     </div>
 
+
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn-default btn-highlighted">
+                                        <img id="captchaImg" src="{{ route('captcha.image') }}" alt="captcha"
+                                            class="border rounded">
+                                        <div class="form-group">
+                                            <input type="text" name="captcha" class="form-control mx-auto w-50 mt-1"
+                                                placeholder="Enter Your Captcha">
+                                            <div class="invalid-feedback d-block invalid-msg"> </div>
+                                        </div>
+                                    </div>
+
+                                    {{-- <div class="col-md-12 text-center">
+                                        <img id="captchaImg" src="{{ route('captcha.image') }}" alt="captcha"
+                                            class="border rounded mb-2">
+                                        <div class="form-group d-inline-block w-50">
+                                            <input type="text" name="captcha" class="form-control"
+                                                placeholder="Enter Your Captcha">
+                                            <div class="invalid-feedback d-block invalid-msg text-start"></div>
+                                        </div>
+                                    </div> --}}
+
+                                    <div class="col-md-12 mt-2">
+                                        <button type="button" onclick="store()" class="btn-default btn-highlighted">
                                             <span>submit message</span>
                                         </button>
                                     </div>
@@ -102,3 +132,93 @@
         </div>
     </div>
 </div>
+
+
+@push('scripts')
+    <script src="{{ asset('assets/js/ajax.js') }}"></script>
+    <script src="{{ asset('assets/js/custom-table.js') }}"></script>
+    <script src="{{ asset('assets/js/helper.js') }}"></script>
+
+    <script>
+        const formName = 'contact-form'
+
+        function store() {
+            var form = document.getElementById(formName);
+            var url = form.getAttribute('action');
+            var method = form.getAttribute('method');
+            var payload = new FormData(form);
+
+            const options = {
+                // contentType: 'application/json',
+                contentType: 'multipart/form-data',
+                method: 'POST',
+                headers: {
+                    dataType: "json",
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                }
+            };
+
+            sendData(
+                url,
+                payload,
+                options,
+                (response) => {
+                    // console.log('Success:', response);
+                    if (response.status) {
+                        alertNotify(response.message, 'success')
+
+                    } else {
+                        associateErrors1(response.errors, 'contact-form');
+                    }
+                },
+                (error) => {
+                    console.error('Error:', error);
+                }
+            );
+        }
+
+        function associateErrors1(errors, formId) {
+            let $form = $(`#${formId}`);
+            console.log('form', $form);
+            console.log('formid', `#${formId}`);
+
+            $form.find('.form-group .invalid-msg').text('');
+            $form.find('.form-group .frm').removeClass('is-invalid');
+
+            Object.keys(errors).forEach(function(fieldName) {
+
+                let $group = $form.find('[name="' + fieldName + '"]');
+                $group.addClass('is-invalid');
+                $group.closest('.form-group').find('.invalid-msg').text(errors[fieldName][0]);
+                console.log('group', $group);
+                console.log('grouphtml', $group.html());
+            });
+        }
+
+        function alertNotify(msg, status) {
+
+            let sts = status || 'success';
+
+            const arr = {
+                success: 'bg-success',
+                error: 'bg-danger',
+                warning: 'bg-info',
+            }
+            console.log(arr[sts]);
+            Toastify({
+                text: msg || '',
+                duration: 3000,
+                newWindow: true,
+                close: false,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                className: arr[sts],
+                // style: {
+                //     background: "linear-gradient(to right, #00b09b, #96c93d)",
+                // },
+                onClick: function() {} // Callback after click
+            }).showToast();
+        }
+    </script>
+@endpush
