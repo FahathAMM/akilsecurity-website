@@ -112,6 +112,12 @@ return [
             'level' => 'debug',
         ],
 
+        'contact' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/contact.log'),
+            'level' => 'info',
+        ],
+
         'cron' => [
             'driver' => 'single',
             'path' => storage_path('logs/kernal_logs/cron.log'),
