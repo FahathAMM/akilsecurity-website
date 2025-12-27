@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\File;
 use App\Traits\DetectsUserEnvironment;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 
 if (!function_exists('getBrowser')) {
@@ -408,6 +409,39 @@ if (!function_exists('formatFileSize')) {
         $bytes /= pow(1024, $pow);
 
         return round($bytes, $precision) . ' ' . $units[$pow];
+    }
+}
+
+// if (!function_exists('generateCaptcha')) {
+//     function generateCaptcha()
+//     {
+//         $length = 6;
+
+//         $characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+//         $captcha = '';
+
+//         for ($i = 0; $i < $length; $i++) {
+//             $captcha .= $characters[random_int(0, strlen($characters) - 1)];
+//         }
+
+//         Session::put('captcha_answer', $captcha);
+
+//         return $captcha;
+//     }
+// }
+
+if (!function_exists('generateCaptchaText')) {
+    function generateCaptchaText($length = 6)
+    {
+        $chars = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz23456789!@#$%';
+        $captcha = '';
+
+        for ($i = 0; $i < $length; $i++) {
+            $captcha .= $chars[random_int(0, strlen($chars) - 1)];
+        }
+
+        Session::put('captcha_answer', $captcha);
+        return $captcha;
     }
 }
 
