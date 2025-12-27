@@ -30,4 +30,6 @@
 <!-- Main Custom js file -->
 <script src="{{ asset('site/js/function.js') }}"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.js"></script>
+
 @stack('scripts')
