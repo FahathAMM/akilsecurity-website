@@ -23,7 +23,9 @@
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="{{ asset('site/images/loader.svg') }}" alt=""></div>
+            <div id="loading-icon"><img src="{{ asset('site/images/loader.png') }}" alt=""
+                    style="filter: brightness(0) invert(1)">
+            </div>
         </div>
     </div>
 
