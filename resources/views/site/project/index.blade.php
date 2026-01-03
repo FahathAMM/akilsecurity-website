@@ -1,5 +1,5 @@
 @extends('layout.app-site')
-@section('title', 'About Us')
+@section('title', 'Projects')
 
 @section('content')
     <!-- Page Header Start -->
