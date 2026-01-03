@@ -6,6 +6,10 @@ return [
         'route' => 'home',
     ],
     [
+        'title' => 'Projects',
+        'route' => 'projects.index',
+    ],
+    [
         'title' => 'Services',
         'route' => 'services.index',
     ],
@@ -17,18 +21,18 @@ return [
     //     'title' => 'Blog',
     //     'route' => '',
     // ],
-    [
-        'title' => 'Pages',
-        'children' => [
-            ['title' => 'Service Details', 'route' => ''],
-            ['title' => 'Blog Details', 'route' => ''],
-            ['title' => 'Projects', 'route' => ''],
-            ['title' => 'Project Details', 'route' => ''],
-            ['title' => 'Our Team', 'route' => ''],
-            ['title' => 'Pricing', 'route' => ''],
-            ['title' => 'FAQs', 'route' => ''],
-        ],
-    ],
+    // [
+    //     'title' => 'Pages',
+    //     'children' => [
+    //         ['title' => 'Service Details', 'route' => ''],
+    //         ['title' => 'Blog Details', 'route' => ''],
+    //         ['title' => 'Projects', 'route' => ''],
+    //         ['title' => 'Project Details', 'route' => ''],
+    //         ['title' => 'Our Team', 'route' => ''],
+    //         ['title' => 'Pricing', 'route' => ''],
+    //         ['title' => 'FAQs', 'route' => ''],
+    //     ],
+    // ],
     [
         'title' => 'Contact Us',
         'route' => 'contact.index',
