@@ -26,7 +26,6 @@
 
     <!-- FILTER BUTTONS -->
 
-
     @php
         // Define your categories
         $categories = [
@@ -52,7 +51,7 @@
         @endforeach
     </div>
 
-    <div class="portfolio-grid py-4">
+    {{-- <div class="portfolio-grid py-4">
         @foreach ($categories as $key => $name)
             @php
                 $folder = $basePath . '/' . $key; // e.g., public/site/images/customer/cctv
@@ -75,8 +74,50 @@
                 </div>
             @endif
         @endforeach
+    </div> --}}
+
+    <div class="portfolio-grid py-4">
+        @foreach ($categories as $key => $name)
+            @php
+                $folder = $basePath . '/' . $key; // e.g., public/site/images/customer/cctv
+                $images = [];
+
+                if (file_exists($folder)) {
+                    $images = array_filter(scandir($folder), function ($file) use ($folder) {
+                        return !in_array($file, ['.', '..']) && preg_match('/\.(jpg|jpeg|png|gif)$/i', $file);
+                    });
+                }
+
+                // Add to global unique array
+                foreach ($images as $img) {
+                    $allImages[$img] = [
+                        'category' => $key,
+                        'name' => $name,
+                        'path' => 'site/images/customer/' . $key . '/' . $img,
+                    ];
+                }
+            @endphp
+
+            @if (!empty($images))
+                <div class="portfolio-item {{ $key }} hide">
+                    @foreach ($images as $image)
+                        <div class="portfolio-box">
+                            <img src="{{ asset('site/images/customer/' . $key . '/' . $image) }}" alt="{{ $name }}">
+                        </div>
+                    @endforeach
+                </div>
+            @endif
+        @endforeach
     </div>
 
+    {{-- Hidden section for "Show All" --}}
+    <div class="portfolio-item all">
+        @foreach ($allImages as $img)
+            <div class="portfolio-box">
+                <img src="{{ asset($img['path']) }}" alt="{{ $img['name'] }}">
+            </div>
+        @endforeach
+    </div>
 
     <script>
         const buttons = document.querySelectorAll('.filter-btn');
@@ -84,17 +125,17 @@
 
         buttons.forEach(btn => {
             btn.addEventListener('click', () => {
-
                 buttons.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
 
                 const filter = btn.dataset.filter;
 
                 items.forEach(item => {
-                    if (filter === 'all' || item.classList.contains(filter)) {
-                        item.classList.remove('hide');
+                    if (filter === 'all') {
+                        // Only show the "all" container
+                        item.classList.toggle('hide', !item.classList.contains('all'));
                     } else {
-                        item.classList.add('hide');
+                        item.classList.toggle('hide', !item.classList.contains(filter));
                     }
                 });
             });
