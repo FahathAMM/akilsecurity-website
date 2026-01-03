@@ -129,7 +129,7 @@ return [
             'CMS Alarm Monitoring Solution',
         ],
         'mobile' => '+971 4 3939 562',
-        'support-description' => '25 years of experience across the Gulf, we provide real-time security and software solutions with IoT monitoring and smart alerts',
+        'support-description' => 'SIRA regulates and oversees Dubai’s private security industry, compliance, licensing, high safety standards across all security services',
 
         'our_approach' => [
             'section_title' => 'our approach',
@@ -516,7 +516,7 @@ return [
                 'title' => 'contact us',
                 'lines' => [
                     ['type' => 'tel', 'value' => '+971 4 3939 562'],
-                    ['type' => 'tel', 'value' => '+971 4 3939 562'],
+                    // ['type' => 'tel', 'value' => '+971 4 3939 562'],
                 ],
                 'delay' => '0s',
             ],
@@ -525,7 +525,7 @@ return [
                 'title' => 'e-mail us',
                 'lines' => [
                     ['type' => 'email', 'value' => 'mail@akilgroup.com'],
-                    ['type' => 'email', 'value' => 'domainname@gmail.com'],
+                    // ['type' => 'email', 'value' => 'domainname@gmail.com'],
                 ],
                 'delay' => '0.2s',
             ],
