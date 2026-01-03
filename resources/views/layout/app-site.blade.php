@@ -9,7 +9,11 @@
     <meta content="Mirnah" name="author" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title') | Akil Security & Alarm System</title>
-    <link rel="shortcut icon" href="{{ asset('/assets/images/favicon.ico') }}" />
+    {{-- <link rel="shortcut icon" href="{{ asset('/assets/images/favicon.ico') }}" /> --}}
+    <link rel="shortcut icon" href="{{ asset('site/images/favicon.ico') }}" />
+
+
+    {{-- D:\Install\laragon\www\akilwebsite\public\site\images\favicon.ico --}}
 
     @include('include.site.head')
 
