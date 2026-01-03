@@ -6,6 +6,7 @@ use App\Http\Controllers\Site\Pages\AboutUsController;
 use App\Http\Controllers\Site\Pages\ContactController;
 use App\Http\Controllers\Site\Pages\ServiceController;
 use App\Http\Controllers\Site\Pages\DownloadController;
+use App\Http\Controllers\Site\Pages\ProjectController;
 use App\Http\Controllers\Site\Product\ProductController;
 use App\Http\Controllers\Site\Solution\SolutionController;
 
@@ -19,6 +20,7 @@ Route::resource('product', ProductController::class);
 Route::resource('contact', ContactController::class);
 Route::resource('abouts', AboutUsController::class);
 Route::resource('services', ServiceController::class);
+Route::resource('projects', ProjectController::class);
 Route::resource('download', DownloadController::class);
 Route::resource('solutions', SolutionController::class);
 
