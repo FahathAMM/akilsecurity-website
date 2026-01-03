@@ -30,7 +30,7 @@
             <div class="col-lg-12">
                 <div class="footer-header">
                     <div class="footer-logo">
-                        <img src="images/footer-logo.svg" alt="">
+                        {{-- <img src="{{ asset('assets/images/footer-logo.svg') }}" alt=""> --}}
                     </div>
                     <div class="footer-social-links">
                         <ul>
