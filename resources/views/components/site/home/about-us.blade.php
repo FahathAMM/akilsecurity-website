@@ -61,14 +61,15 @@
                         <!-- About Us Body Image Start -->
                         <div class="about-us-body-img">
                             <figure class="image-anime">
-                                <img src="{{ asset('site/images/about-body-img.png') }}" alt="">
+                                {{-- <img src="{{ asset('site/images/about-body-img.png') }}" alt=""> --}}
+                                <img src="{{ asset('site/images/sira.png') }}" alt="">
                             </figure>
                         </div>
                         <!-- About Us Body Image End -->
 
                         <!-- About Us Body Content Start -->
                         <div class="about-us-body-content">
-                            <h3>24/7 support assistance</h3>
+                            <h3>SIRA Dubai Authority</h3>
                             <p>{{ about_support_description() }}</p>
                         </div>
                         <!-- About Us Body Content End -->
@@ -116,3 +117,29 @@
         </div>
     </div>
 </div>
+
+<style>
+    .about-us-body-img {
+        width: 200px;
+        height: 145px;
+        background-color: transparent !important;
+        clip-path: polygon(45% -70%, 96% 50%, 50% 155%, 0 50%);
+        display: flex;
+        margin-right: 10px;
+        margin-left: -20px;
+    }
+
+    .about-us-body-img img {
+        width: 165px !important;
+        height: 150px !important;
+    }
+
+    .about-us-body-img figure {
+        width: 180px;
+        height: 145px;
+        overflow: unset;
+        background: none !important;
+        margin: -2px 0px 0px 15px !important;
+        clip-path: none;
+    }
+</style>
