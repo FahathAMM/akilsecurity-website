@@ -76,7 +76,7 @@
         @endforeach
     </div> --}}
 
-    <div class="portfolio-grid py-4">
+    <div class="portfolio-grid pb-4 pt-4 category-area">
         @foreach ($categories as $key => $name)
             @php
                 $folder = $basePath . '/' . $key; // e.g., public/site/images/customer/cctv
@@ -111,7 +111,7 @@
     </div>
 
     {{-- Hidden section for "Show All" --}}
-    <div class="portfolio-item all">
+    <div class="portfolio-item all pb-4 pt-0">
         @foreach ($allImages as $img)
             <div class="portfolio-box">
                 <img src="{{ asset($img['path']) }}" alt="{{ $img['name'] }}">
@@ -131,8 +131,11 @@
                 const filter = btn.dataset.filter;
 
                 items.forEach(item => {
+                    document.querySelector('.category-area')?.classList.remove('pt-4');
+
                     if (filter === 'all') {
                         // Only show the "all" container
+
                         item.classList.toggle('hide', !item.classList.contains('all'));
                     } else {
                         item.classList.toggle('hide', !item.classList.contains(filter));
