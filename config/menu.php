@@ -6,12 +6,12 @@ return [
         'route' => 'home',
     ],
     [
-        'title' => 'Projects',
-        'route' => 'projects.index',
-    ],
-    [
         'title' => 'Services',
         'route' => 'services.index',
+    ],
+    [
+        'title' => 'Projects',
+        'route' => 'projects.index',
     ],
     [
         'title' => 'About Us',
